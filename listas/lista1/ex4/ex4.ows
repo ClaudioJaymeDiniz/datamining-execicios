@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(87.0, 251.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(281.0, 159.0)" />
+		<node id="2" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(223.0, 283.0)" />
+		<node id="3" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="remove vazios" position="(441.0, 159.0)" />
+		<node id="4" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(568.0, 158.0)" />
+		<node id="5" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(745.0, 156.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/cjd/workspace/listas/ex3-vazio.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/cjd/workspace/listas', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\x0e\x00\x00\x02\t\x00\x00\x07M\x00\x00\x03F\x00\x00\x06\x0e\x00\x00\x02\t\x00\x00\x07M\x00\x00\x03F\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x06\x0e\x00\x00\x02\t\x00\x00\x07M\x00\x00\x03F', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVvwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAAAAAAAAAAABBkAAAHzAAAAAAAAAAAAAAQZAAAB
+8wAAAAAAAAAADXAAAAAAAAAAAAAABBkAAAHzlIwHc29ydGluZ5RLAIwMUHlRdDYuUXRDb3JllIwM
+UXQuU29ydE9yZGVylJOUSwCFlFKUhpSMC19fdmVyc2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdz
+lF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQo
+jAljb2xvcl92YXKUTkr+////hpSMDXNlbGVjdGVkX3ZhcnOUXZRoDEsCdYwKYXR0cmlidXRlc5R9
+lCiMCklEX0NsaWVudGWUSwKMBUlkYWRllEsCjAZFc3RhZG+USwGMBVJlbmRhlEsCjAtRdGRfQ29t
+cHJhc5RLAowTVmFsb3JfVG90YWxfQ29tcHJhc5RLAnWMBW1ldGFzlH2UjAZDaWRhZGWUSwNzdWJh
+dS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVCgIAAAAAAAB9lCiMFV9kZWZhdWx0X21ldGhvZF9pbmRleJRLAowKYXV0b2NvbW1pdJSIjBJj
+b250cm9sQXJlYVZpc2libGWUiIwVZGVmYXVsdF9udW1lcmljX3ZhbHVllEcAAAAAAAAAAIwMZGVm
+YXVsdF90aW1llEsAjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAAAAAAAAAAAAnQA
+AAHqAAAAAAAAAAAAAAJ0AAAB6gAAAAAAAAAADXAAAAAAAAAAAAAAAnQAAAHqlIwLX192ZXJzaW9u
+X1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRl
+eHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMGl92YXJpYWJsZV9pbXB1dGF0aW9uX3N0YXRllH2UjCdP
+cmFuZ2UuZGF0YS52YXJpYWJsZS5Db250aW51b3VzVmFyaWFibGWUjAVSZW5kYZSGlEsCKYaUc0r+
+////hpRoCEsBdYwKYXR0cmlidXRlc5R9lCiMCklEX0NsaWVudGWUSwKMBUlkYWRllEsCjAZFc3Rh
+ZG+USwFoFUsCjAtRdGRfQ29tcHJhc5RLAowTVmFsb3JfVG90YWxfQ29tcHJhc5RLAnWMBW1ldGFz
+lH2UjAZDaWRhZGWUSwNzdWJhdS4=
+</properties>
+		<properties node_id="4" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3\x00\x00\x00\x00\x00\x00\x00\x00\rp\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x1f\x00\x00\x01\xf3', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="5" format="pickle">gASVzgEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAAAQAAABkAAAJYAAABqAAAAAEAAAAZAAACWAAAAagAAAAAAAAAAA1wAAAAAQAAABkA
+AAJYAAABqJSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojApJRF9DbGllbnRllEsCSwBdlEcAAAAAAAAAAGF0lGFoCEsC
+dYwKYXR0cmlidXRlc5R9lCiMCklEX0NsaWVudGWUSwKMBUlkYWRllEsCjAZFc3RhZG+USwGMBVJl
+bmRhlEsCjAtRdGRfQ29tcHJhc5RLAowTVmFsb3JfVG90YWxfQ29tcHJhc5RLAnWMBW1ldGFzlH2U
+jAZDaWRhZGWUSwNzdWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
