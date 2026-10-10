@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Tech - Catálogo de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .produto {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid #16a085;
+        }
+        .produto h2 {
+            font-size: 1.2rem;
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .info {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .info span {
+            font-weight: bold;
+            color: #333;
+        }
+        .preco {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 12px 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .disponivel {
+            background-color: #e8f8f5;
+            color: #27ae60;
+        }
+        .estoque-baixo {
+            background-color: #fef9e7;
+            color: #f39c12;
+        }
+        .indisponivel {
+            background-color: #fbeee6;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TechStore - Loja de Informática</h1>
+        <p>Confira nossos produtos, hardwares e periféricos</p>
+    </header>
+
+    <div class="container">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <h2 class="nome-produto">Placa de Vídeo RTX 4060</h2>
+            <div class="info">Fabricante: <span class="fabricante">NVIDIA / ASUS</span></div>
+            <div class="info">Categoria: <span class="categoria">Placas de Vídeo</span></div>
+            <div class="preco">R$ <span class="preco-valor">2.399,00</span></div>
+            <div class="info">Estoque: <span class="situacao disponivel">Disponível</span></div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto">
+            <h2 class="nome-produto">Processador Ryzen 7 5700X</h2>
+            <div class="info">Fabricante: <span class="fabricante">AMD</span></div>
+            <div class="info">Categoria: <span class="categoria">Processadores</span></div>
+            <div class="preco">R$ <span class="preco-valor">1.250,00</span></div>
+            <div class="info">Estoque: <span class="situacao estoque-baixo">Estoque baixo</span></div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto">
+            <h2 class="nome-produto">Memória RAM 16GB DDR4 3200MHz</h2>
+            <div class="info">Fabricante: <span class="fabricante">Corsair</span></div>
+            <div class="info">Categoria: <span class="categoria">Memórias</span></div>
+            <div class="preco">R$ <span class="preco-valor">310,00</span></div>
+            <div class="info">Estoque: <span class="situacao indisponivel">Indisponível</span></div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="produto">
+            <h2 class="nome-produto">SSD NVMe M.2 1TB</h2>
+            <div class="info">Fabricante: <span class="fabricante">Kingston</span></div>
+            <div class="info">Categoria: <span class="categoria">Armazenamento</span></div>
+            <div class="preco">R$ <span class="preco-valor">450,00</span></div>
+            <div class="info">Estoque: <span class="situacao disponivel">Disponível</span></div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="produto">
+            <h2 class="nome-produto">Teclado Mecânico Gamer RGB</h2>
+            <div class="info">Fabricante: <span class="fabricante">Redragon</span></div>
+            <div class="info">Categoria: <span class="categoria">Periféricos</span></div>
+            <div class="preco">R$ <span class="preco-valor">220,00</span></div>
+            <div class="info">Estoque: <span class="situacao estoque-baixo">Estoque baixo</span></div>
+        </div>
+    </div>
+
+</body>
+</html>

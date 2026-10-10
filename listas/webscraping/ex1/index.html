@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos - Escola TechFictícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        .curso {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+        }
+        .curso h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .info {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .info span {
+            font-weight: bold;
+        }
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 4px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Escola TechFictícia - Catálogo de Cursos</h1>
+        <p>Confira nossos cursos disponíveis na área de tecnologia e inovação</p>
+    </header>
+
+    <div class="container">
+        <!-- Curso 1 -->
+        <div class="curso">
+            <h2 class="nome-curso">Desenvolvimento Web Full Stack</h2>
+            <div class="info">Área: <span class="area-curso">Tecnologia</span></div>
+            <div class="info">Carga Horária: <span class="carga-horaria">120 horas</span></div>
+            <p><strong>Assuntos estudados:</strong></p>
+            <ul>
+                <li class="assunto">HTML5, CSS3 e JavaScript Moderno</li>
+                <li class="assunto">Node.js e Express no Backend</li>
+                <li class="assunto">Banco de dados Relacionais e Não Relacionais</li>
+            </ul>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="curso">
+            <h2 class="nome-curso">Ciência de Dados com Python</h2>
+            <div class="info">Área: <span class="area-curso">Dados e IA</span></div>
+            <div class="info">Carga Horária: <span class="carga-horaria">90 horas</span></div>
+            <p><strong>Assuntos estudados:</strong></p>
+            <ul>
+                <li class="assunto">Manipulação de dados com Pandas e NumPy</li>
+                <li class="assunto">Visualização de dados com Matplotlib e Seaborn</li>
+                <li class="assunto">Introdução ao Machine Learning com Scikit-Learn</li>
+            </ul>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="curso">
+            <h2 class="nome-curso">Segurança da Informação e Redes</h2>
+            <div class="info">Área: <span class="area-curso">Infraestrutura</span></div>
+            <div class="info">Carga Horária: <span class="carga-horaria">80 horas</span></div>
+            <p><strong>Assuntos estudados:</strong></p>
+            <ul>
+                <li class="assunto">Fundamentos de Redes de Computadores e TCP/IP</li>
+                <li class="assunto">Testes de invasão e Ethical Hacking básico</li>
+                <li class="assunto">Criptografia e políticas de segurança</li>
+            </ul>
+        </div>
+
+        <!-- Curso 4 -->
+        <div class="curso">
+            <h2 class="nome-curso">UX/UI Design de Interfaces</h2>
+            <div class="info">Área: <span class="area-curso">Design</span></div>
+            <div class="info">Carga Horária: <span class="carga-horaria">60 horas</span></div>
+            <p><strong>Assuntos estudados:</strong></p>
+            <ul>
+                <li class="assunto">Pesquisa com usuários e personas</li>
+                <li class="assunto">Prototipagem e Wireframes no Figma</li>
+                <li class="assunto">Testes de usabilidade e Design Systems</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
