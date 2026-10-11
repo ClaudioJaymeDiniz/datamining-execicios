@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Restaurante Sabor & Arte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fcf8f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #d35400;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 5px solid #e67e22;
+        }
+        .categoria-titulo {
+            font-size: 1.5rem;
+            color: #d35400;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+        .item-cardapio {
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+        }
+        .item-cardapio:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .item-topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nome-item {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0;
+        }
+        .preco-item {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .descricao-item {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante Sabor & Arte — Cardápio</h1>
+        <p>Explore nossos pratos, bebidas e sobremesas preparados com carinho</p>
+    </header>
+
+    <div class="container">
+        <!-- Seção: Pratos -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Pratos Principais</h2>
+            
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Filé à Parmegiana</h3>
+                    <span class="preco-item">R$ 54,90</span>
+                </div>
+                <p class="descricao-item">Acompanha arroz branco e batatas rústicas fritas na hora.</p>
+            </div>
+
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Salmão Grelhado ao Molho de Ervas</h3>
+                    <span class="preco-item">R$ 68,00</span>
+                </div>
+                <p class="descricao-item">Servido com legumes salteados no azeite e purê de mandioquinha.</p>
+            </div>
+
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Risoto de Funghi Secchi</h3>
+                    <span class="preco-item">R$ 49,50</span>
+                </div>
+                <p class="descricao-item">Arroz arbóreo cremoso com mix de cogumelos selvagens e parmesão.</p>
+            </div>
+        </section>
+
+        <!-- Seção: Bebidas -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Bebidas</h2>
+            
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Suco Natural de Laranja</h3>
+                    <span class="preco-item">R$ 10,00</span>
+                </div>
+                <p class="descricao-item">Copo de 400ml feito com frutas frescas e sem adição de água.</p>
+            </div>
+
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Limonada Suíça</h3>
+                    <span class="preco-item">R$ 12,00</span>
+                </div>
+                <p class="descricao-item">Batida com leite condensado e raspas de limão.</p>
+            </div>
+
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Chá Gelado da Casa (Hibisco com Limão)</h3>
+                    <span class="preco-item">R$ 9,00</span>
+                </div>
+                <p class="descricao-item">Infusão natural levemente adocicada com toque cítrico.</p>
+            </div>
+        </section>
+
+        <!-- Seção: Sobremesas -->
+        <section class="secao-cardapio">
+            <h2 class="categoria-titulo">Sobremesas</h2>
+            
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Petit Gateau</h3>
+                    <span class="preco-item">R$ 22,00</span>
+                </div>
+                <p class="descricao-item">Bolo de chocolate quentinho com interior cremoso, acompanhado de sorvete de creme.</p>
+            </div>
+
+            <div class="item-cardapio">
+                <div class="item-topo">
+                    <h3 class="nome-item">Pudim de Leite Condensado</h3>
+                    <span class="preco-item">R$ 14,00</span>
+                </div>
+                <p class="descricao-item">Tradicional receita da casa com calda de caramelo dourada.</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
